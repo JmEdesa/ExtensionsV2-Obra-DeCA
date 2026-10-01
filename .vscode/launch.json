@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "DES-ALQ-OBRA",
+            "request": "launch",
+            "type": "al",
+            "startupObjectId": 7122055,
+            "startupObjectType": "Page",
+            "breakOnError": true,
+            "launchBrowser": true,
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true,
+            "environmentType": "Sandbox",
+            "tenant": "477b8b60-59fb-4938-8552-9eff40154e9f",
+            "environmentName": "DES-ALQ-OBRA",
+            "schemaUpdateMode": "Synchronize"
+        }
+    ]
+}
