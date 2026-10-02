@@ -1,6 +1,6 @@
 {
   "id": "81fbcce6-bc28-4ad2-9239-120973c69c37",
-  "name": "ALQUINTA  Obra-DeCA",
+ "name": "ALQUINTA  Obra-DeCA",
  "publisher": "Acicatech Servicios Tecnológicos, SL",
   "version": "28.0.0.0",
   "brief": "",
@@ -16,11 +16,17 @@
       "id": "a23301f3-4c23-4d94-bd5a-01e509204833",
       "name": "Transportes - TMS + DeCA",
       "publisher": "Acicatech Servicios Tecnológicos, SL",
-      "version": "1.6.0.2"
+      "version": "1.6.0.3"
     },
  {
       "id": "02be3ebb-a9a9-4bb5-9593-3e5c6223fdc1",
       "name": "Alquinta",
+      "publisher": "Acicatech Servicios Tecnológicos, SL",
+      "version": "1.0.0.0"
+    },
+     {
+      "id": "42fcb464-94d7-4270-9cd3-b8d81ef84caa",
+      "name": "Alquinta - OBRA",
       "publisher": "Acicatech Servicios Tecnológicos, SL",
       "version": "1.0.0.0"
     }

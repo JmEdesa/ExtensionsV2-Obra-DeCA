@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="it-IT" original="ALQUINTA  Obra-DeCA">
+    <body>
+      <group id="body">
+        <trans-unit id="Codeunit 1912687933 - Method 104362639 - NamedType 1581998021" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No posted service route lines were found for expedition %1.</source>
+          <target>No posted service route lines were found for expedition %1.</target>
+          <note from="Developer" annotates="general" priority="2">ESP="No se encontraron líneas de ruta registradas para la expedición de servicio %1."</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit AST OE Events Mgt. - Method BuildServiceExpeditionLot - NamedType NoServiceRoutesErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1912687933 - Method 104362639 - NamedType 3524404760" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No posted service expedition lines were found for route %1 of expedition %2.</source>
+          <target>No posted service expedition lines were found for route %1 of expedition %2.</target>
+          <note from="Developer" annotates="general" priority="2">ESP="No se encontraron líneas registradas de expedición de servicio para la ruta %1 de la expedición %2."</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit AST OE Events Mgt. - Method BuildServiceExpeditionLot - NamedType NoServiceLinesErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1912687933 - Method 2823472917 - NamedType 1630708395" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No service item lines were found for route %1 of expedition %2.</source>
+          <target>No service item lines were found for route %1 of expedition %2.</target>
+          <note from="Developer" annotates="general" priority="2">ESP="No se encontraron líneas de producto de servicio para la ruta %1 de la expedición %2."</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit AST OE Events Mgt. - Method BuildServiceGoods - NamedType NoServiceGoodsErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1912687933 - Method 3872370916 - NamedType 99702332" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Expedition %1 - Service route %2</source>
+          <target>Expedition %1 - Service route %2</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Expedición %1 - Ruta de servicio %2"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit AST OE Events Mgt. - Method BuildServiceShipmentReference - NamedType ServiceShipmentNameLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1912687933 - Method 2306232734 - NamedType 2266260875" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Neither the ship-to address nor customer %1 has an e-mail address, required for service expedition %2.</source>
+          <target>Neither the ship-to address nor customer %1 has an e-mail address, required for service expedition %2.</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Ni la dirección de envío ni el cliente %1 tienen correo electrónico, necesario para la expedición de servicio %2."</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit AST OE Events Mgt. - Method CheckServiceExpeditionCustomerEmail - NamedType MissingCustomerEmailErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1912687933 - Method 2011990574 - NamedType 1451962209" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Expedition line %1 does not reference the service item journal.</source>
+          <target>Expedition line %1 does not reference the service item journal.</target>
+          <note from="Developer" annotates="general" priority="2">ESP="La línea de expedición %1 no referencia el diario de productos de servicio."</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit AST OE Events Mgt. - Method OnPostExpeditionFromCodeOnUnhandledSourceDocType - NamedType InvalidRecordTableErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2863465146 - Method 1554363905 - NamedType 1229675165" size-unit="char" translate="yes" xml:space="preserve">
+          <source>All selected lines must have the same %1. Expected value: %2. Line value: %3.</source>
+          <target>All selected lines must have the same %1. Expected value: %2. Line value: %3.</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Todas las líneas seleccionadas deben tener el mismo %1. Valor esperado: %2. Valor de la línea: %3."</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit AST OE Expeditions Mgt. - Method CheckSameValue - NamedType DifferentValueErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2863465146 - Method 2835392696 - NamedType 2835781972" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Type Error</source>
+          <target>Type Error</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Error de Tipo"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit AST OE Expeditions Mgt. - Method CheckValidEntryType - NamedType InvalidEntryTypeErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2863465146 - Method 2626465295 - NamedType 2849851078" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The %1 Expedition has been created.</source>
+          <target>The %1 Expedition has been created.</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Se ha creado la Expedición %1."</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit AST OE Expeditions Mgt. - Method CreateExpeditionFromServItemBinEntry - NamedType SuccesLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2863465146 - Method 2058244978 - NamedType 822536433" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The transport quantity for journal line %1 must be greater than zero.</source>
+          <target>The transport quantity for journal line %1 must be greater than zero.</target>
+          <note from="Developer" annotates="general" priority="2">ESP="La cantidad a transportar de la línea de diario %1 debe ser mayor que cero."</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit AST OE Expeditions Mgt. - Method GetTransportQuantity - NamedType InvalidQuantityErr</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2198429204 - Control 4200184881 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2065553241">
+          <source>Specifies the item or service item number.</source>
+          <target>Specifies the item or service item number.</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Especifica el número de producto o producto de servicio."</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AST OE Expedition Lines - Control No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2198429204 - Control 1878130204 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2065553241">
+          <source>Specifies whether the line transports an item or a service item.</source>
+          <target>Specifies whether the line transports an item or a service item.</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Especifica si la línea transporta un producto o un producto de servicio."</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AST OE Expedition Lines - Control Type - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2198429204 - Control 1307873908 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2065553241">
+          <source>Specifies the value of the Volume field.</source>
+          <target>Specifies the value of the Volume field.</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Volumen"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AST OE Expedition Lines - Control Volume - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3587787902 - Control 4011079545 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3686345359">
+          <source>Specifies the value of the Default Transport Method field.</source>
+          <target>Specifies the value of the Default Transport Method field.</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Método Transporte Defecto"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AST OE Expedition Setup - Control Default Transport Method - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3587787902 - Control 3036630091 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3686345359">
+          <source>Specifies the value of the Auto Post Expedition from Services field.</source>
+          <target>Specifies the value of the Auto Post Expedition from Services field.</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Registro automático de expedición desde Servicios"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AST OE Expedition Setup - Control ServItem Journ. AutoPost Exp. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2525791349 - Control 4200184881 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3823858704">
+          <source>Specifies the item or service item number.</source>
+          <target>Specifies the item or service item number.</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Especifica el número de producto o producto de servicio."</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AST OE Posted Exp. Lines - Control No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2525791349 - Control 1878130204 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3823858704">
+          <source>Specifies whether the line transports an item or a service item.</source>
+          <target>Specifies whether the line transports an item or a service item.</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Especifica si la línea transporta un producto o un producto de servicio."</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AST OE Posted Exp. Lines - Control Type - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3088093199 - Action 3747900974 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3495359581">
+          <source>Show Expeditions</source>
+          <target>Show Expeditions</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Ver Expedicion"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AST OE Service Item Bin Entry - Action ASTEXShowExpeditions - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3088093199 - Action 3747900974 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3495359581">
+          <source>Show Expeditions</source>
+          <target>Show Expeditions</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Mostrar Expedicion"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AST OE Service Item Bin Entry - Action ASTEXShowExpeditions - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3088093199 - Action 3747900974 - Method 1377591017 - NamedType 161039521" size-unit="char" translate="yes" xml:space="preserve" al-object-target="PageExtension 3088093199">
+          <source>No expedition was found for journal entry %1.</source>
+          <target>No expedition was found for journal entry %1.</target>
+          <note from="Developer" annotates="general" priority="2">ESP="No se encontró ninguna expedición para la línea de diario %1."</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AST OE Service Item Bin Entry - Action ASTEXShowExpeditions - Method OnAction - NamedType ExpeditionNotFoundErr</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3088093199 - Control 483191181 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3495359581">
+          <source>Specifies the value of the Driver Code field.</source>
+          <target>Specifies the value of the Driver Code field.</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Código Conductor"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AST OE Service Item Bin Entry - Control Driver Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3088093199 - Control 1387240579 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3495359581">
+          <source>Specifies the value of the Driver Name field.</source>
+          <target>Specifies the value of the Driver Name field.</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Nombre Conductor"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AST OE Service Item Bin Entry - Control Driver Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3088093199 - Control 1526337706 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3495359581">
+          <source>Specifies the value of the Expedition No. field.</source>
+          <target>Specifies the value of the Expedition No. field.</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Nº Expedición"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AST OE Service Item Bin Entry - Control Expedition No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3088093199 - Control 2564497724 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3495359581">
+          <source>Specifies the value of the Expedition Route field.</source>
+          <target>Specifies the value of the Expedition Route field.</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Ruta de Expedición"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AST OE Service Item Bin Entry - Control Expedition Route - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3088093199 - Control 2516827243 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3495359581">
+          <source>Specifies the value of the Trailer Plate field.</source>
+          <target>Specifies the value of the Trailer Plate field.</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Matrícula Remolque"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AST OE Service Item Bin Entry - Control Trailer Plate - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3088093199 - Control 3193866272 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3495359581">
+          <source>Specifies the value of the Transport Method field.</source>
+          <target>Specifies the value of the Transport Method field.</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Método Transporte"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AST OE Service Item Bin Entry - Control Transport Method - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3088093199 - Control 2320860425 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3495359581">
+          <source>Specifies the value of the Truck Plate field.</source>
+          <target>Specifies the value of the Truck Plate field.</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Matrícula Camión"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AST OE Service Item Bin Entry - Control Truck Plate - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3088093199 - Control 1193173812 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3495359581">
+          <source>Specifies the value of the Vehicle Code field.</source>
+          <target>Specifies the value of the Vehicle Code field.</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Código Vehículo"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AST OE Service Item Bin Entry - Control Vehicle - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2918425709 - Action 4231977784 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2967255605">
+          <source>Executes the Create Expedition action.</source>
+          <target>Executes the Create Expedition action.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AST OE SrvItem Bin Entry Jour. - Action ALQEXCreateExpedition - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2918425709 - Action 4231977784 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2967255605">
+          <source>Create Expedition</source>
+          <target>Create Expedition</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Crear Expedición"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AST OE SrvItem Bin Entry Jour. - Action ALQEXCreateExpedition - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2918425709 - Action 3747900974 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2967255605">
+          <source>Show Expeditions</source>
+          <target>Show Expeditions</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Ver Expedicion"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AST OE SrvItem Bin Entry Jour. - Action ASTEXShowExpeditions - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2918425709 - Action 3747900974 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2967255605">
+          <source>Show Expeditions</source>
+          <target>Show Expeditions</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Mostrar Expedicion"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AST OE SrvItem Bin Entry Jour. - Action ASTEXShowExpeditions - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2918425709 - Action 3747900974 - Method 1377591017 - NamedType 161039521" size-unit="char" translate="yes" xml:space="preserve" al-object-target="PageExtension 2918425709">
+          <source>No expedition was found for journal entry %1.</source>
+          <target>No expedition was found for journal entry %1.</target>
+          <note from="Developer" annotates="general" priority="2">ESP="No se encontró ninguna expedición para la línea de diario %1."</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AST OE SrvItem Bin Entry Jour. - Action ASTEXShowExpeditions - Method OnAction - NamedType ExpeditionNotFoundErr</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2918425709 - Control 3193866272 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2967255605">
+          <source>Specifies the value of the Transport Method field.</source>
+          <target>Specifies the value of the Transport Method field.</target>
+          <note from="Developer" annotates="general" priority="2">%ESP="Método Transporte"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AST OE SrvItem Bin Entry Jour. - Control Transport Method - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2918425709 - Control 483191181 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2967255605">
+          <source>Specifies the value of the Driver Code field.</source>
+          <target>Specifies the value of the Driver Code field.</target>
+          <note from="Developer" annotates="general" priority="2">%ESP="Código Conductor"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AST OE SrvItem Bin Entry Jour. - Control Driver Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2918425709 - Control 1387240579 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2967255605">
+          <source>Specifies the value of the Driver Name field.</source>
+          <target>Specifies the value of the Driver Name field.</target>
+          <note from="Developer" annotates="general" priority="2">%ESP="Nombre Conductor"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AST OE SrvItem Bin Entry Jour. - Control Driver Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2918425709 - Control 1142855343 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2967255605">
+          <source>Specifies the eCMR shipment status for this expedition.</source>
+          <target>Specifies the eCMR shipment status for this expedition.</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Estado del envío eCMR de esta expedición."</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AST OE SrvItem Bin Entry Jour. - Control eCMR Shipment Status - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2918425709 - Control 1526337706 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2967255605">
+          <source>Specifies the value of the Expedition No. field.</source>
+          <target>Specifies the value of the Expedition No. field.</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Nº Expedición"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AST OE SrvItem Bin Entry Jour. - Control Expedition No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2918425709 - Control 2564497724 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2967255605">
+          <source>Specifies the value of the Expedition Route field.</source>
+          <target>Specifies the value of the Expedition Route field.</target>
+          <note from="Developer" annotates="general" priority="2">%ESP="Ruta de Expedición"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AST OE SrvItem Bin Entry Jour. - Control Expedition Route - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2918425709 - Control 2516827243 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2967255605">
+          <source>Specifies the value of the Trailer Plate field.</source>
+          <target>Specifies the value of the Trailer Plate field.</target>
+          <note from="Developer" annotates="general" priority="2">%ESP="Matrícula Remolque"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AST OE SrvItem Bin Entry Jour. - Control Trailer Plate - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2918425709 - Control 2320860425 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2967255605">
+          <source>Specifies the value of the Truck Plate field.</source>
+          <target>Specifies the value of the Truck Plate field.</target>
+          <note from="Developer" annotates="general" priority="2">%ESP="Matrícula Camión"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AST OE SrvItem Bin Entry Jour. - Control Truck Plate - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2918425709 - Control 1193173812 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2967255605">
+          <source>Specifies the value of the Vehicle Code field.</source>
+          <target>Specifies the value of the Vehicle Code field.</target>
+          <note from="Developer" annotates="general" priority="2">%ESP="Código Vehículo"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AST OE SrvItem Bin Entry Jour. - Control Vehicle - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2918425709 - Control 111287535 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2967255605">
+          <source>eCMR Documents</source>
+          <target>eCMR Documents</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Documentos eCMR"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AST OE SrvItem Bin Entry Jour. - Control ECMRDocuments - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2918425709 - Control 359684207 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2967255605">
+          <source>Map</source>
+          <target>Map</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Mapa"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AST OE SrvItem Bin Entry Jour. - Control RouteMap - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3587787902 - Field 4011079545 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3686345359">
+          <source>Default Transport Method</source>
+          <target>Default Transport Method</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Método Transporte Defecto"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AST OE Expedition Setup - Field Default Transport Method - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3587787902 - Field 3036630091 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3686345359">
+          <source>Auto Post Expedition from Services</source>
+          <target>Auto Post Expedition from Services</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Registro automático de expedición desde Servicios"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AST OE Expedition Setup - Field ServItem Journ. AutoPost Exp. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3994631085 - Field 2564497724 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 90603656">
+          <source>Expedition Route</source>
+          <target>Expedition Route</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Ruta de Expedición"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AST OE Expeditions Lines - Field Expedition Route - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3994631085 - Field 4200184881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 90603656">
+          <source>No.</source>
+          <target>No.</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Nº"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AST OE Expeditions Lines - Field No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3994631085 - Field 542309460 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 90603656">
+          <source>RecordId</source>
+          <target>RecordId</target>
+          <note from="Developer" annotates="general" priority="2">ESP="RecordId"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AST OE Expeditions Lines - Field RecordId - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3994631085 - Field 1878130204 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 90603656">
+          <source>Type</source>
+          <target>Type</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Tipo"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AST OE Expeditions Lines - Field Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3994631085 - Field 1307873908 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 90603656">
+          <source>Volume</source>
+          <target>Volume</target>
+          <note from="Developer" annotates="general" priority="2">ITA="Volume",ESP="Volumen"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AST OE Expeditions Lines - Field Volume - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1286962964 - Field 483191181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3840548219">
+          <source>Driver Code</source>
+          <target>Driver Code</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Código Conductor"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AST OE Pos. ServItem Bin Entry - Field Driver Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1286962964 - Field 1387240579 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3840548219">
+          <source>Driver Name</source>
+          <target>Driver Name</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Nombre Conductor"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AST OE Pos. ServItem Bin Entry - Field Driver Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1286962964 - Field 1526337706 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3840548219">
+          <source>Expedition No.</source>
+          <target>Expedition No.</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Nº Expedición"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AST OE Pos. ServItem Bin Entry - Field Expedition No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1286962964 - Field 2564497724 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3840548219">
+          <source>Expedition Route</source>
+          <target>Expedition Route</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Ruta de Expedición"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AST OE Pos. ServItem Bin Entry - Field Expedition Route - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1286962964 - Field 2516827243 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3840548219">
+          <source>Trailer Plate</source>
+          <target>Trailer Plate</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Matrícula Remolque"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AST OE Pos. ServItem Bin Entry - Field Trailer Plate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1286962964 - Field 3193866272 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3840548219">
+          <source>Transport Method</source>
+          <target>Transport Method</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Método Transporte"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AST OE Pos. ServItem Bin Entry - Field Transport Method - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1286962964 - Field 2320860425 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3840548219">
+          <source>Truck Plate</source>
+          <target>Truck Plate</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Matrícula Camión"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AST OE Pos. ServItem Bin Entry - Field Truck Plate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1286962964 - Field 1193173812 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3840548219">
+          <source>Vehicle</source>
+          <target>Vehicle</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Vehículo"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AST OE Pos. ServItem Bin Entry - Field Vehicle - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2525791349 - Field 2564497724 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3823858704">
+          <source>Expedition Route</source>
+          <target>Expedition Route</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Ruta de Expedición"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AST OE Posted Exp. Lines - Field Expedition Route - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2525791349 - Field 4200184881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3823858704">
+          <source>No.</source>
+          <target>No.</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Nº"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AST OE Posted Exp. Lines - Field No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2525791349 - Field 542309460 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3823858704">
+          <source>RecordId</source>
+          <target>RecordId</target>
+          <note from="Developer" annotates="general" priority="2">ESP="RecordId"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AST OE Posted Exp. Lines - Field RecordId - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2525791349 - Field 1878130204 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3823858704">
+          <source>Type</source>
+          <target>Type</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Tipo"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AST OE Posted Exp. Lines - Field Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2525791349 - Field 1307873908 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3823858704">
+          <source>Volume</source>
+          <target>Volume</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Volumen"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AST OE Posted Exp. Lines - Field Volume - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2051664166 - Field 2704330142 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3098884407">
+          <source>Journal Batch Name</source>
+          <target>Journal Batch Name</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Nombre sección diario"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AST OE Posted Route Ex. Lines - Field Journal Batch Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2051664166 - Field 3586807204 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3098884407">
+          <source>Journal Line No.</source>
+          <target>Journal Line No.</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Nº línea diario"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AST OE Posted Route Ex. Lines - Field Journal Line No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2051664166 - Field 3684440170 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3098884407">
+          <source>Journal Template Name</source>
+          <target>Journal Template Name</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Nombre libro diario"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AST OE Posted Route Ex. Lines - Field Journal Template Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 565420355 - Field 2704330142 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2219454954">
+          <source>Journal Batch Name</source>
+          <target>Journal Batch Name</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Nombre sección diario"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AST OE Route Expedition Lines - Field Journal Batch Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 565420355 - Field 3586807204 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2219454954">
+          <source>Journal Line No.</source>
+          <target>Journal Line No.</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Nº línea diario"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AST OE Route Expedition Lines - Field Journal Line No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 565420355 - Field 3684440170 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2219454954">
+          <source>Journal Template Name</source>
+          <target>Journal Template Name</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Nombre libro diario"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AST OE Route Expedition Lines - Field Journal Template Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1617884700 - Field 483191181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2027083406">
+          <source>Driver Code</source>
+          <target>Driver Code</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Código Conductor"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AST OE Serv.Item Entry Journal - Field Driver Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1617884700 - Field 1387240579 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2027083406">
+          <source>Driver Name</source>
+          <target>Driver Name</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Nombre Conductor"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AST OE Serv.Item Entry Journal - Field Driver Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1617884700 - Field 3615875104 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2027083406">
+          <source>eCMR Shipment Id</source>
+          <target>eCMR Shipment Id</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Id. envío eCMR"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AST OE Serv.Item Entry Journal - Field eCMR Shipment Id - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1617884700 - Field 1142855343 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2027083406">
+          <source>eCMR Shipment Status</source>
+          <target>eCMR Shipment Status</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Estado envío eCMR"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AST OE Serv.Item Entry Journal - Field eCMR Shipment Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1617884700 - Field 1526337706 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2027083406">
+          <source>Expedition No.</source>
+          <target>Expedition No.</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Nº Expedición"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AST OE Serv.Item Entry Journal - Field Expedition No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1617884700 - Field 2564497724 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2027083406">
+          <source>Expedition Route</source>
+          <target>Expedition Route</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Ruta de Expedición"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AST OE Serv.Item Entry Journal - Field Expedition Route - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1617884700 - Field 1026369608 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2027083406">
+          <source>Posted Route Expedition No.</source>
+          <target>Posted Route Expedition No.</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Nº Expedición Ruta Registrada"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AST OE Serv.Item Entry Journal - Field Posted Route Exp. No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1617884700 - Field 1781334723 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2027083406">
+          <source>Posted Route Line No.</source>
+          <target>Posted Route Line No.</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Nº Línea Ruta Registrada"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AST OE Serv.Item Entry Journal - Field Posted Route Line No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1617884700 - Field 2516827243 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2027083406">
+          <source>Trailer Plate</source>
+          <target>Trailer Plate</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Matrícula Remolque"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AST OE Serv.Item Entry Journal - Field Trailer Plate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1617884700 - Field 3193866272 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2027083406">
+          <source>Transport Method</source>
+          <target>Transport Method</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Método Transporte"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AST OE Serv.Item Entry Journal - Field Transport Method - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1617884700 - Field 2320860425 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2027083406">
+          <source>Truck Plate</source>
+          <target>Truck Plate</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Matrícula Camión"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AST OE Serv.Item Entry Journal - Field Truck Plate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1617884700 - Field 1193173812 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2027083406">
+          <source>Vehicle</source>
+          <target>Vehicle</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Vehículo"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AST OE Serv.Item Entry Journal - Field Vehicle - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="EnumExtension 1017895939 - EnumValue 3183293987 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Enum 3487447810">
+          <source>Services Delivery</source>
+          <target>Services Delivery</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Entrega Servicio"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">EnumExtension AST OE Source Doc Type - EnumValue Service Delivery - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="EnumExtension 1017895939 - EnumValue 925143595 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Enum 3487447810">
+          <source>Service Pickup</source>
+          <target>Service Pickup</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Recogida Servicio"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">EnumExtension AST OE Source Doc Type - EnumValue Service Pickup - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
