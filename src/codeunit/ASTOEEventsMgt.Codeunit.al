@@ -129,24 +129,32 @@ codeunit 78350 "AST OE Events Mgt."
         if not IsServiceSourceDocType(Expedition."Source Doc. Type") then
             exit;
 
-        if GetServiceConsigneeEmail(ExpeditionLine."Customer No.", ExpeditionLine."Destination Location Name", ExpeditionLine."Destination Location Address", ExpeditionLine."Destination Location City", ExpeditionLine."Destination Location Post Code", ExpeditionLine."Dest. Country/Region Code") = '' then
+
+        if GetServiceConsigneeEmail(ExpeditionLine."Customer No.", ExpeditionLine.RecordId, ExpeditionLine."Source Doc. Type") = '' then
             Error(MissingCustomerEmailErr, ExpeditionLine."Customer No.", Expedition."Expedition No.");
     end;
 
-    local procedure GetServiceConsigneeEmail(CustomerNo: Code[20]; DestinationName: Text[100]; DestinationAddress: Text[100]; DestinationCity: Text[30]; DestinationPostCode: Code[20]; DestinationCountryCode: Code[10]): Text
+    local procedure GetServiceConsigneeEmail(CustomerNo: Code[20]; SourceRecordId: RecordId; SourceDocType: Enum "ASTEX Source Doc Type"): Text
     var
         Customer: Record Customer;
         ShiptoAddress: Record "Ship-to Address";
+        ServItemEntryJournal: Record "AST Serv. Item Entry Journal";
+        SourceRecordRef: RecordRef;
+        ShipToCode: Code[10];
     begin
-        ShiptoAddress.SetRange("Customer No.", CustomerNo);
-        ShiptoAddress.SetRange(Name, DestinationName);
-        ShiptoAddress.SetRange(Address, DestinationAddress);
-        ShiptoAddress.SetRange(City, DestinationCity);
-        ShiptoAddress.SetRange("Post Code", DestinationPostCode);
-        ShiptoAddress.SetRange("Country/Region Code", DestinationCountryCode);
-        ShiptoAddress.SetFilter("E-Mail", '<>%1', '');
-        if ShiptoAddress.FindFirst() then
-            exit(ShiptoAddress."E-Mail");
+        if SourceRecordRef.Get(SourceRecordId) then
+            if SourceRecordRef.Number() = Database::"AST Serv. Item Entry Journal" then begin
+                SourceRecordRef.SetTable(ServItemEntryJournal);
+                case SourceDocType of
+                    SourceDocType::"Service Delivery":
+                        ShipToCode := ServItemEntryJournal."Assignment Cust Ship Address";
+                    SourceDocType::"Service Pickup":
+                        ShipToCode := ServItemEntryJournal."Originally Cust Ship Address";
+                end;
+                if ShiptoAddress.Get(CustomerNo, ShipToCode) then
+                    if ShiptoAddress."E-Mail" <> '' then
+                        exit(ShiptoAddress."E-Mail");
+            end;
 
         Customer.Get(CustomerNo);
         exit(Customer."E-Mail");

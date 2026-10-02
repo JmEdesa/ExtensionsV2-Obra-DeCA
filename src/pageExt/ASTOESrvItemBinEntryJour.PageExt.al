@@ -88,13 +88,10 @@ pageextension 78350 "AST OE SrvItem Bin Entry Jour." extends "ASTO Serv. Mgt. As
                     ServItemEntryJournal: Record "AST Serv. Item Entry Journal";
                 begin
                     CurrPage.SetSelectionFilter(ServItemEntryJournal);
-                    if ServItemEntryJournal.Count > 1 then begin
-                        ALQExpeditionsMgt.TestServItemJournalLine(ServItemEntryJournal);
-                        ALQExpeditionsMgt.CreateExpeditionFromServItemBinEntry(ServItemEntryJournal);
-                    end else begin
-                        ALQExpeditionsMgt.TestServItemJournalLine(Rec);
-                        ALQExpeditionsMgt.CreateExpeditionFromServItemBinEntry(Rec);
-                    end;
+                    if ServItemEntryJournal.Count > 1 then
+                        ALQExpeditionsMgt.CreateExpeditionFromServItemBinEntry(ServItemEntryJournal)
+                    else
+                        ALQExpeditionsMgt.CreateExpeditionFromServItemBinEntry(Rec)
                 end;
             }
             action(ASTEXShowExpeditions)

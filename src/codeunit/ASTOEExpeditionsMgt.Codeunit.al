@@ -61,6 +61,7 @@ codeunit 78351 "AST OE Expeditions Mgt."
     // Comprueba que la línea tenga informados los datos de transporte necesarios para la expedición.
     local procedure CheckMandatoryFields(ServItemEntryJournal: Record "AST Serv. Item Entry Journal")
     begin
+        ServItemEntryJournal.TestField("Expedition No.", '');
         ServItemEntryJournal.TestField("Transport Method");
         ServItemEntryJournal.TestField("Shipping Agent Code");
         ServItemEntryJournal.TestField(Vehicle);
@@ -120,6 +121,7 @@ codeunit 78351 "AST OE Expeditions Mgt."
         ASTEXProcessEvents: Codeunit "ASTEX Process Events";
     begin
         ExpeditionSetup.Get();
+        TestServItemJournalLine(ServItemEntryJournal);
         // Las líneas ya se han validado previamente en TestServItemJournalLine.
         ServItemEntryJournal.SetCurrentKey("Expedition Route");
         ServItemEntryJournal.SetAscending("Expedition Route", true);
@@ -182,8 +184,6 @@ codeunit 78351 "AST OE Expeditions Mgt."
     var
         ExpeditionsLines: Record "ASTEX Expeditions Lines";
         RouteExpLines: Record "ASTEX Route Expedition Lines";
-        ServiceItem: Record "AST Service Item";
-        Item: Record Item;
         ShiptoAddress: Record "Ship-to Address";
         TransportQuantity: Decimal;
         IsHandled: Boolean;
@@ -219,21 +219,7 @@ codeunit 78351 "AST OE Expeditions Mgt."
 
         TransportQuantity := GetTransportQuantity(ServItemEntryJournal);
         ExpeditionsLines.Validate("Qty to Ship", TransportQuantity);
-        case ServItemEntryJournal.Type of
-            ServItemEntryJournal.Type::"Service Item":
-                begin
-                    ServiceItem.Get(ServItemEntryJournal."No.");
-                    ExpeditionsLines.Validate("Net Weight", TransportQuantity * ServiceItem.Weight);
-                    ExpeditionsLines.Validate(Volume, TransportQuantity * ServiceItem.Volume);
-                end;
-            ServItemEntryJournal.Type::Item:
-                begin
-                    Item.Get(ServItemEntryJournal."No.");
-                    ExpeditionsLines.Validate("Gross Weight", TransportQuantity * Item."Gross Weight");
-                    ExpeditionsLines.Validate("Net Weight", TransportQuantity * Item."Net Weight");
-                    ExpeditionsLines.Validate(Volume, TransportQuantity * Item."Unit Volume");
-                end;
-        end;
+        UpdateExpeditionLineTransportWeights(ExpeditionsLines);
         ExpeditionsLines.Validate("Destination Location Name", ShiptoAddress.Name);
         ExpeditionsLines.Validate("Destination Location Address", ShiptoAddress.Address);
         ExpeditionsLines.Validate("Destination Location City", ShiptoAddress.City);
@@ -286,6 +272,35 @@ codeunit 78351 "AST OE Expeditions Mgt."
         end;
     end;
 
+
+    procedure UpdateExpeditionLineTransportWeights(var ExpeditionLine: Record "ASTEX Expeditions Lines")
+    var
+        ServiceItem: Record "AST Service Item";
+        Item: Record Item;
+    begin
+        if not (ExpeditionLine."Source Doc. Type" in [ExpeditionLine."Source Doc. Type"::"Service Delivery", ExpeditionLine."Source Doc. Type"::"Service Pickup"]) then
+            exit;
+        if ExpeditionLine."No." = '' then
+            exit;
+
+        case ExpeditionLine.Type of
+            ExpeditionLine.Type::"Service Item":
+                begin
+                    ServiceItem.Get(ExpeditionLine."No.");
+                    ExpeditionLine.Validate("Net Weight", ExpeditionLine."Qty to Ship" * ServiceItem.Weight);
+                    ExpeditionLine.Validate(Volume, ExpeditionLine."Qty to Ship" * ServiceItem.Volume);
+                end;
+            ExpeditionLine.Type::Item:
+                begin
+                    Item.Get(ExpeditionLine."No.");
+                    ExpeditionLine.Validate("Gross Weight", ExpeditionLine."Qty to Ship" * Item."Gross Weight");
+                    ExpeditionLine.Validate("Net Weight", ExpeditionLine."Qty to Ship" * Item."Net Weight");
+                    ExpeditionLine.Validate(Volume, ExpeditionLine."Qty to Ship" * Item."Unit Volume");
+                end;
+            else
+                ExpeditionLine.FieldError(Type);
+        end;
+    end;
 
     procedure GetTransportQuantity(ServItemEntryJournal: Record "AST Serv. Item Entry Journal"): Decimal
     var
